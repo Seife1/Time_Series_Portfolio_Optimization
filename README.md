@@ -14,10 +14,10 @@ Time_Series_Portfolio_Optimization/
 │   ├── processed/             # Preprocessed, cleaned datasets
 │   └── additional_datasets/   # Any extra datasets used for analysis
 ├── notebooks/
-│   ├── 1_data_preprocessing.ipynb      # Data preprocessing and exploratory analysis
-│   ├── 2_model_development.ipynb       # Model training and evaluation
-│   ├── 3_forecasting_and_analysis.ipynb # Forecasting and analysis notebook
-│   └── 4_portfolio_optimization.ipynb   # Portfolio optimization
+│   ├── 1_data_preprocessing.ipynb                # Data preprocessing and exploratory analysis
+│   ├── 2_ARIMA_Model.ipynb                       # Model training and evaluation
+│   ├── 3_Forcast_Using_[2].ipynb                 # Forecasting and analysis notebook
+│   └── 4_Optimize_Portfolio_Based_on_[3].ipynb   # Portfolio optimization
 ├── src/
 │   ├── __init__.py
 │   ├── data_preprocessing.py           # Data cleaning and preprocessing functions
@@ -25,9 +25,6 @@ Time_Series_Portfolio_Optimization/
 │   ├── forecasting.py                  # Forecasting functions
 │   └── portfolio_optimization.py       # Portfolio optimization functions
 ├── models/                              # Saved models and scalers
-├── config/
-│   ├── config.py                       # Configuration file (API keys, file paths)
-│   └── parameters.json                 # Model parameters and settings
 ├── requirements.txt                    # Project dependencies
 └── README.md                           # Project overview and instructions
 ```
@@ -47,7 +44,7 @@ pip install -r requirements.txt
 
 ## Project Steps
 1. **Data Preprocessing:** Cleaning and preparing data for analysis, removing anomalies, and filling missing values.
-2. **Modeling:** Using ARIMA, SARIMA, and LSTM to predict asset price trends.
+2. **Modeling:** Using ARIMA to predict asset price trends.
 3. **Forecasting:** Generating forecasts to analyze future market trends and volatility.
 4. **Portfolio Optimization:** Creating an optimized portfolio by adjusting asset allocations based on forecasted returns.
 
@@ -58,9 +55,10 @@ pip install -r requirements.txt
 
 `pandas`, `numpy`: For data manipulation and processing.
 
-`pmdarima`, `statsmodels`: For ARIMA and SARIMA modeling.
+<!-- `pmdarima`,  -->
+`statsmodels`: For ARIMA and SARIMA modeling.
 
-`tensorflow/keras`: For building LSTM models.
+<!-- `tensorflow/keras`: For building LSTM models. -->
 
 `Matplotlib`, `Seaborn`: For data visualization.
 
